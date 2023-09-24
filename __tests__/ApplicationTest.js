@@ -18,6 +18,15 @@ describe("problem1", () => {
   test("case3", () => {
     expect(problem1([99, 102], [211, 212])).toEqual(-1);
   });
+  test("case4", () => {
+    expect(problem1([undefined, 101], [102, 103])).toEqual(-1);
+  });
+  test("case5", () => {
+    expect(problem1([101, 102], [101, 102])).toEqual(0);
+  });
+  test("case6", () => {
+    expect(problem1([102, 103], [105, 106])).toEqual(-1);
+  });
 });
 
 describe("problem2", () => {
